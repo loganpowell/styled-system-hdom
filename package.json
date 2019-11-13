@@ -1,6 +1,6 @@
 {
   "name": "styled-system-hdom",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "thi.ng/hdom theming using `styled-system`",
   "main": "index.js",
   "keywords": [
