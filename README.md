@@ -38,7 +38,7 @@
 
 See and example of a theme-spec complaint theme [here](https://github.com/system-ui/theme-ui/blob/master/packages/preset-tailwind/src/index.js)
 ```js
-import { theme } from './my-theme-spec
+import { theme } from './my-theme-spec'
 import { themer } from 'styled-system-hdom'
 export const [theme_styler, THEME] = themer(theme)
 ```
@@ -46,7 +46,7 @@ export const [theme_styler, THEME] = themer(theme)
 #### `src/components/button.js`
 
 ```js
-import { theme_styler } from "../styles"
+import { theme_styler } from '../styles'
 
 const x_btn_bhvr = name => ({
   onclick: () => console.warn(`no handler assigned to ${name} 'onclick' event`)
@@ -95,8 +95,8 @@ import { button_x, button } from "./components/button"
 import { THEME as theme } from "./styles"
 
 const outlined_button = (i = 0) => [
-  button_x({tag: "span"}, "buttons.outline"),  // customize button cfg in-situ
-  { onclick: () => (i++) },           // add button behavior in-situ
+  button_x({tag: "span"}, "buttons.outline"), // customize button cfg in-situ
+  { onclick: () => (i++) },                   // add button behavior in-situ
   `clicks: ${i}`
 ]
 
