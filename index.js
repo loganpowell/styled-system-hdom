@@ -4,7 +4,6 @@ import { getIn } from "@thi.ng/paths"
 import system_css from "@styled-system/css"
 import de_cameled from "decamelize-keys-deep"
 import { at_media, injectStyleSheet, PRETTY, css as hiccup_css } from "@thi.ng/hiccup-css"
-import default_theme from "./theme"
 
 const log = (...args) => console.log(...args)
 // Atom structure
