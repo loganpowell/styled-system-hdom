@@ -1,0 +1,38 @@
+{
+  "name": "styled-system-hdom",
+  "version": "0.1.0",
+  "description": "thi.ng/hdom theming using `styled-system`",
+  "main": "index.js",
+  "keywords": [
+    "styled system",
+    "theming",
+    "components",
+    "hdom",
+    "thi.ng",
+    "css"
+  ],
+  "dependencies": {
+    "@styled-system/css": "^5.0.23",
+    "@thi.ng/atom": "^3.1.0",
+    "@thi.ng/hdom": "^9.0.0-alpha1",
+    "@thi.ng/hiccup-css": "^1.1.5",
+    "@thi.ng/paths": "^2.1.5",
+    "decamelize-keys-deep": "^0.1.1"
+  },
+  "author": "Logan Powell",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^6.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loganpowell/styled-system-hdom.git"
+  },
+  "bugs": {
+    "url": "https://github.com/loganpowell/styled-system-hdom/issues"
+  },
+  "homepage": "https://github.com/loganpowell/styled-system-hdom#readme"
+}
