@@ -1,4 +1,4 @@
-import * as rand from "@thi.ng/random"
+import { randomID } from "@thi.ng/random"
 import { Atom, Cursor } from "@thi.ng/atom"
 import { getIn } from "@thi.ng/paths"
 import system_css from "@styled-system/css"
@@ -27,7 +27,7 @@ const log = (...args) => console.log(...args)
 const global_structure = {
   basics: {},
   pseudos: {},
-  queries: {},
+  queries: {}
 }
 /**
  * creates a new atom/state container for storing styles
@@ -114,7 +114,7 @@ export const parse_theme = theme => de_cameled(system_css(theme)(theme), "-")
  * and returns a unique hash string to be used by the component for scoped css
  * */
 const style_fire = theme_spec => (sel, styles = null, path = null) => {
-  const hash = `${sel}${rand.randomID(5, "_", "0123456789abcdefghijklmnopqrstuvwxyz")}`
+  const hash = `${sel}${randomID(5, "_", "0123456789abcdefghijklmnopqrstuvwxyz")}`
   const dot_hash = `.${hash}`
   const spec_lens = getIn(theme_spec, path)
   const style_obj = path ? de_cameled(system_css(spec_lens)(theme_spec), "-") : {}
@@ -140,7 +140,6 @@ export const themer = theme_spec => {
   basic_entries.forEach(([selector, styles]) => partition(selector, styles))
 
   const theme_styler = style_fire(theme_spec)
-  // returns tuple [ configured_theme_obj, theme_styler_fn ] 😈
   return [theme_styler, THEME]
 }
 

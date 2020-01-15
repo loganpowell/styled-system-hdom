@@ -2,7 +2,7 @@
   "name": "styled-system-hdom",
   "version": "0.1.4",
   "description": "thi.ng/hdom theming using `styled-system`",
-  "main": "index.js",
+  "main": "src/index.js",
   "keywords": [
     "styled system",
     "theming",
@@ -12,20 +12,22 @@
     "css"
   ],
   "dependencies": {
-    "@styled-system/css": "^5.0.23",
-    "@thi.ng/atom": "^3.1.0",
-    "@thi.ng/hdom": "^9.0.0-alpha1",
-    "@thi.ng/hiccup-css": "^1.1.5",
-    "@thi.ng/paths": "^2.1.5",
-    "decamelize-keys-deep": "^0.1.1"
+    "@styled-system/css": "latest",
+    "@thi.ng/atom": "latest",
+    "@thi.ng/hdom": "latest",
+    "@thi.ng/hiccup-css": "latest",
+    "@thi.ng/paths": "latest",
+    "@thi.ng/random": "latest",
+    "decamelize-keys-deep": "latest"
   },
   "author": "Logan Powell",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.8.3",
     "eslint": "^6.6.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "parcel build index.js"
   },
   "repository": {
     "type": "git",
